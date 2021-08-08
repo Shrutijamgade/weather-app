@@ -32,7 +32,6 @@ app.post('/', function (req, res) {
         query = query[0].toUpperCase() + query.slice(1).toLowerCase();
     }
     
-    //const appid = "9a31fc9e6464859474028020360dedc";
     const appid = process.env.APPID;
     const unit = "metric"
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${appid}1&units=${unit}`
