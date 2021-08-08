@@ -1,0 +1,86 @@
+body {
+  background-color: rgb(169, 111, 223);
+}
+
+.heading {
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  margin: 10px;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  margin-bottom: 10px;
+}
+.cards-area {
+  margin: 0 2em;
+}
+
+.weather-card {
+  border-radius: 1.25em;
+}
+input {
+  -webkit-appearance: none;
+}
+
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+  border-bottom: 1px solid #ccc;
+}
+
+form input {
+  font-size: 1rem;
+  height: 40px;
+  padding: 5px 5px 10px;
+  border-bottom: 1px solid;
+  margin: 0 1em;
+}
+form input::placeholder {
+  color: currentColor;
+}
+
+.city-temp {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1e2432;
+}
+sup {
+  font-size: 0.5em;
+}
+
+.city-name sup {
+  padding: 0.2em 0.6em;
+  border-radius: 30px;
+  color: #fff;
+  background: #ff8c00;
+  text-transform: capitalize;
+}
+
+.city-icon {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+.card-body {
+  border-radius: 30px;
+}
+
+.description {
+  color: #797474;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8em;
+}
+
+.error-text {
+  display: flex;
+  justify-content: center;
+  color: gold;
+}
