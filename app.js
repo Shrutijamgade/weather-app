@@ -13,9 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
 app.get('/', function (req, res) {
-
     res.render("index", { cityInfo: cities, error: error });
-
 });
 
 app.post('/', function (req, res) {
@@ -27,7 +25,6 @@ app.post('/', function (req, res) {
     let citiesName = cities.map(c => {
         return c.name.toLowerCase();
     });
-    
     if (query) {
         query = query[0].toUpperCase() + query.slice(1).toLowerCase();
     }
@@ -57,28 +54,21 @@ app.post('/', function (req, res) {
                         temperature: temp,
                         description: description,
                         country: country
-    
                     }
                     cities.push(cityData);
                     error = "";
                 }
             }
             else {
-                error = "Enter a valid City!";
-                
+                error = "Enter a valid City!";   
             }
             res.redirect("/");
-            
-
-
         },
             response.on("error", function (e) {
                 console.log("error", e);
             }),
         )
-    
     });
-    
 });
 
 
